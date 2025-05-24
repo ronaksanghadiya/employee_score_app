@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_BASE_URL = 'http://localhost:5000/api';
+const API_BASE_URL = 'https://employeescoreapp-production.up.railway.app/api';
 
 export const addEmployee = async (employeeData) => {
   const response = await axios.post(`${API_BASE_URL}/employee/add`, employeeData, {
@@ -16,7 +16,7 @@ export const getEmployeeById = async (id) => {
 };
 export const submitScorecard = async (id, scorecardData) => {
   const res = await axios.post(
-    `http://localhost:5000/api/employee/${id}/scorecard`,
+    `https://employeescoreapp-production.up.railway.app/api/employee/${id}/scorecard`,
     scorecardData,
     {
       withCredentials: true

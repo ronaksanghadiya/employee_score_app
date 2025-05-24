@@ -92,7 +92,7 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { FaEdit, FaTrash } from 'react-icons/fa';
 
-const API_BASE_URL = 'http://localhost:5000/api';
+const API_BASE_URL = 'https://employeescoreapp-production.up.railway.app/api';
 
 const EmployeeList = () => {
     const [employees, setEmployees] = useState([]);
